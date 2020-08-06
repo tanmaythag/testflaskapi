@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+   Records!
+{% endblock %}
+ 
+{% block body %}
+	<ol action="{{ url_for('teacher') }}" method = "GET"> 
+	    <li> {{ question }} </li>
+		<li> {{ image }} </li>
+	</ol>
+	
+{% endblock %}
+	
